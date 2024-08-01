@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+*{
+    padding: 2px;
+    margin: auto;
+    box-sizing: content-box;
+}
+.main{
+    display: flex;
+    width: 95vw;
+    justify-content: space-between;
+}
+
+.content{
+    padding: 10px 0;
+    box-sizing: content-box;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60vw;
+    background-color: rgb(34, 116, 224);
+    color: white;
+    font-family: 'Quicksand',sans-serif;
+}
+
+
+h1{
+    color: aquamarine;
+    text-align: center;
+}
+
+small{
+    color: red;
+}
+h2{
+    background-color: rgb(224,116,34);
+    width: fit-content;
+    border-radius: 8px;
+}
+fieldset{
+    border:none;
+    padding: 0.25rem .5rem;
+}
+label {
+    display: block;
+  }
+  
+  input,select {
+    margin: 2.5px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    outline: none;
+    border-color: rgba(87,176,255,0.27);
+    border-radius: 4px;
+  }
+
+  input:focus{
+    background-color: cadetblue;
+    border-color:  rgba(87,176,255,0.27);
+
+  }
+.amenities{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+h4 , .payment>label{
+    border-bottom: 1.5px solid black;
+    width: min-content;
+    color: rgb(129, 255, 3);
+}
+#Bal_amt ,#total_amt{
+    font-size: 3rem;
+    color: rgb(255, 18, 18);
+    background-color: rgb(255,255,255);
+    font-family: 'Merriweather', serif;
+}
+input[type="submit"]{
+    cursor: pointer;
+    display: block;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.5rem;
+    background-color: rgb(222,75,5);
+    color:rgb(255, 251, 0);  
+    font-weight: 400; 
+}
+button[type='button']{
+    cursor: pointer;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    height: 2em;
+    font-size: 1.2rem;
+    color: rgb(222,75,5);
+    background-color:rgb(255, 251, 0);  
+}
+.data{
+    border-left: 3px solid rgb(225,222,75);
+    display: flex;
+    width:40vw;
+    height:100vh;
+    flex-flow: column;
+    justify-content: center;
+    background-color: rgb(224,116,34);
+}
+
+.data>main>h1{
+    background-color: rgb(34, 116, 224);
+    color:rgb(255,255,255);
+    padding: 10px;
+    border-radius: 5px;
+}
+.item {
+    display: flex;
+    width: 35vw;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color:rgb(225,222,75);
+    font-family: 'Quicksand','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .info {
+    text-align: left;
+    width: 75%;
+  }
+  
+  .price {
+    text-align: right;
+    width: 25%;
+    color: rgb(10, 255, 18);
+  }
+  @media only screen and (max-width: 800px) {
+   .main{
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    margin: 0;
+   }
+   .content{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    width:100vw;
+    height: 100%;
+   }
+   .data{
+    display: none;
+   } 
+   #Bal_amt ,#total_amt{
+    width: 100%;
+   }
+  }
+  
